@@ -15,7 +15,7 @@ class CloudLeaker:
 
     def download(self,id,autoplay= False):
         self.ids = id
-        self.http = "https://music.163.com/weapi/song/enhance/player/url/v1?csrf_token=a5ee7f9cd35f2d58788aae444130511b"
+        self.http = "https://music.163.com/weapi/song/enhance/player/url/v1?csrf_token="
         self.arg = '{"ids":"[' + str(self.ids) +']","level":"standard","encodeType":"aac","csrf_token":""}'
         self.header = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1 Edg/122.0.0.0'}
         with open('core.js','r',encoding='utf-8') as Script: self.data = execjs.compile(Script.read()).call('test',self.arg)
