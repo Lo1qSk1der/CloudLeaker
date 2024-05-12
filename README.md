@@ -9,4 +9,3 @@ Lo1qSk1der
 git clone https://github.com/False-kbmb/CloudLeaker.git
 >
 pip install -r requirements.txt
-
